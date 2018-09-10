@@ -1,0 +1,13 @@
+{
+  "name": "unix-fetch-body",
+  "version": "0.0.1",
+  "description": "Fetch body module for unix-fetch.",
+  "main": "index.js",
+  "author": "Kevin Chueh",
+  "license": "MIT",
+  "dependencies": {
+    "inflation": "^2.0.0",
+    "raw-body": "^2.3.3",
+    "xtend": "^4.0.1"
+  }
+}
