@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "inflation": "^2.0.0",
-    "raw-body": "^2.3.3",
-    "xtend": "^4.0.1"
+    "qs": "^6.5.2",
+    "raw-body": "^2.3.3"
   }
 }

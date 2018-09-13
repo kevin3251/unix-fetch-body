@@ -1,5 +1,5 @@
 const http = require('http')
-const text = require('../lib/text')
+const raw = require('../lib/raw')
 // const postData = querystring.stringify({
 //     'msg': 'Hello World!'
 // })
@@ -24,7 +24,7 @@ const req = http.request(options, async (res) => {
     })
 
     // console.log(await parse.text(res))
-    console.log(await text(res))
+    console.log(await raw(res))
 })
 
 req.on('error', (e) => {

@@ -1,13 +1,13 @@
 const http = require('http')
-const text = require('../lib/text')
+const json = require('../lib/json')
 // const postData = querystring.stringify({
 //     'msg': 'Hello World!'
 // })
 
 const options = {
-    hostname: 'www.google.com',
+    hostname: 'api.openweathermap.org',
     port: 80,
-    path: '/',
+    path: '/data/2.5/weather',
     method: 'get',
 }
 
@@ -24,7 +24,7 @@ const req = http.request(options, async (res) => {
     })
 
     // console.log(await parse.text(res))
-    console.log(await text(res))
+    console.log(await json(res))
 })
 
 req.on('error', (e) => {
